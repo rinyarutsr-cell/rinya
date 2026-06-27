@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduce Myself</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #8dd4da;
+            color: black;
+            margin: 0;
+            padding: 0;
+            transition: all 0.3s ease;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: rgba(255,255,255,0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        strong {
+            color: #000;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* ปุ่มกด */
+        .button-container {
+            text-align: center;
+            margin-top: 30px;  /* เว้นระยะจากข้างบน */
+        }
+
+        button {
+            padding: 10px 20px;   /*ปุ่ม ก-ย */
+            font-size: 16px;
+            border: none;         /* ลบเส้นกรอบปุ่ม */
+            border-radius: 20px;  /* โค้ง */
+            cursor: pointer;
+            background-color: #0077b6;
+            color: white;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #023e8a;
+        }
+
+
+        /* Dark Mode */
+        body.dark {
+            background-color: #1f2937;
+            color: white;
+        }
+
+        body.dark .container {
+            background-color: #374151;
+        }
+
+        body.dark strong {
+            color: #ffffff;
+        }
+
+        body.dark a {
+            color: #90cdf4;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1><b>Introduce Myself</b></h1>
+
+    <!-- <p>ย่อหน้า -->
+
+    <p><strong>ชื่อ :</strong> นางสาวริญญารัศมิ์ ศรีประสม</p>   
+
+    <p><strong>ชื่อเล่น :</strong> ปิ๊ง</p>
+
+    <p><strong>อายุ :</strong> 26 ปี</p>
+
+    <p><strong>การศึกษา :</strong> มหาวิทยาลัยนเรศวร คณะวิศวกรรมศาสตร์</p>
+
+    <p><strong>สถานที่ทำงาน :</strong> การไฟฟ้าส่วนภูมิภาคสาขาแม่สอด จังหวัดตาก</p>
+
+    <p><strong>แผนก :</strong> ปฏิบัติการและบำรุงรักษาระบบจำหน่าย</p>
+
+    <p>
+        <strong>งานที่ได้รับมอบหมาย :</strong><br>
+        - ดูค่า KPI ในแผนก<br>
+        - จัดซื้อจัดจ้างอุปกรณ์และเครื่องมือที่ได้รับมอบหมาย<br>
+        - ดูแลเรื่องใบสั่งต่าง ๆ
+    </p>
+
+    <p>
+        <strong>เพลงโปรด :</strong>
+        <a href="https://www.youtube.com/results?search_query=Johnny+Stimson+Flower" target="_blank">
+            Johnny Stimson - Flower
+        </a>
+    </p>
+
+    <p>
+        <strong>อาหารที่ชอบ :</strong>
+        ส้มตำ, ยำ, ก๋วยเตี๋ยว, ผัดไทย และ ทุกอย่างที่เป็น "หมูกรอบ"
+    </p>
+
+    <p>
+        <strong>เหตุผลที่อยากเข้า DevPool :</strong><br>
+        เนื่องจากตอนนี้เป็นยุคทองของ AI จึงอยากนำความรู้มาพัฒนาองค์กร
+        และพัฒนาตัวเองให้ทันยุคดิจิทัล
+    </p>
+
+    <div class="button-container">
+        <button onclick="toggleTheme()">🌞 Light / 🌙 Dark Mode</button>
+    </div>
+
+</div>
+
+<script>
+function toggleTheme() { /* เรียกฟังก์ชันสลับธีม */
+    document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
